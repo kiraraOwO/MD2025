@@ -2,6 +2,11 @@
 
 [notion link](https://www.notion.so/Lecture-1-Materials-1d7919598f2680408ac1f6f5a8146409)
 
+**init&run**
+
+- `size(width, height)` - 画布大小
+- `run_sketch()` - run
+
 **基本図形**
 
 - `ellipse(x, y, width, height)` - 楕円を描画する。円を描く場合はwidthとheightを同じ値にする
@@ -21,7 +26,6 @@
 
 - `stroke_weight(weight)` - 線の太さを指定する
 - `background(r, g, b)` - 背景色をRGB値で指定する
-- `size(width, height)` - 画布大小
 
 ---
 基本格式
@@ -46,3 +50,4 @@ if __name__ == '__main__':
 注意点：
 
 * 设定画布之类的初始化设定必须在`setup`函数的最开始
+* py5需要调用java，注意配置JAVA_HOME
