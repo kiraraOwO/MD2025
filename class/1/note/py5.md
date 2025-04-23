@@ -2,6 +2,8 @@
 
 [notion link](https://www.notion.so/Lecture-1-Materials-1d7919598f2680408ac1f6f5a8146409)
 
+[py5 documentation](https://py5coding.org/index.html)
+
 **init&run**
 
 - `size(width, height)` - 画布大小
