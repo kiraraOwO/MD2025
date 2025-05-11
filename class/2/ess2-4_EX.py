@@ -3,10 +3,10 @@ import random
 
 PLAY_SPEED = 25  # recommend 15-25
 TEXT_LENS = 10  # recommend 5-10
+OFFSET = 0
 
 y_list = []
 text_size = 20
-offset = 20
 flag = True
 lock = False
 locked_x = 0
@@ -48,7 +48,7 @@ def draw():
                 py5.fill(0, 100, 100, 255)
                 # t = random.choice(special_list[j])
                 t = random.choice(special_list[len(special_list) - 1 - j])
-                py5.text(t, x, y + offset * j)
+                py5.text(t, x, y + (text_size + OFFSET) * j)
 
         else:
             for j in range(TEXT_LENS):
@@ -58,7 +58,7 @@ def draw():
                 else:
                     # 加了暂停后这一步其实是没用的
                     py5.fill(0, 100, 100, alpha)
-                py5.text(random.choice('abcdefghijklmnopqrstuvwxyz!@#$%^&*()'), x, y+offset*j)
+                py5.text(random.choice('abcdefghijklmnopqrstuvwxyz!@#$%^&*()'), x, y + (text_size + OFFSET) * j)
 
         if y > py5.height and random.random() > 0.975:
             if x == locked_x:
